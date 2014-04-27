@@ -1,0 +1,58 @@
+body {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	}
+
+#calendar {
+	width: 700px;
+	margin-top: -80px;
+	float:left;
+	margin-bottom:30px;
+	position:absolute;
+	}
+
+#resultarea {
+	height: 500px;
+	width:425px;
+	text-align: left;
+	margin-top:8px;
+	overflow-y: auto;
+	float:right;
+}
+
+#termDropdown {
+	text-align:left;
+	margin-right: 70%;
+}
+
+
+#departmentDropdown {
+	text-align: left;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+#title{
+	text-align: right;
+	margin-right:5%;
+}
+
+#term {
+	margin-top: -5px;
+	margin-left:60%;
+}
+
+#department{
+	margin-top: -5px;
+}
+
+#slider-range {
+	width: 250px;
+}
+
+
