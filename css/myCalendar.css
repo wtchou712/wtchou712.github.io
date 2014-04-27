@@ -1,0 +1,28 @@
+body {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+
+#calendar {
+	width:  800px;
+	height: 800px;
+	margin: 0 auto;
+	float: left;
+}
+
+#editPanel {
+	float:right;
+}
+
+#addPanel {
+	float:left;
+	width:325px;
+	height:500px;
+	margin:0 auto;
+}
+
+.checkbox {
+	margin: 10px;
+}

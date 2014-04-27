@@ -1,0 +1,79 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+<script src='../lib/jquery.min.js'></script>
+<script src='../lib/jquery-ui.custom.min.js'></script>
+
+<link href='myCalenderDivir.css' rel='stylesheet' />
+<script src='myCalenderDivir.js'></script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-slider.js"></script>
+
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+
+<link href='../fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../fullcalendar/fullcalendar.min.js'></script>
+
+
+
+</head>
+<body>
+<div class="container">
+
+	<div class="row">
+
+	    <div class="col-lg-8">
+	    	<div id='calendar'></div>
+	    </div>
+
+	    <div class=" panel col-lg-4">
+	    	<h1 id="title">Planning with CAESAR</h1>
+
+			<div class="btn-group" id="term">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="term-btn-title">
+				Term<span class="caret"></span></button>
+
+				<ul class="dropdown-menu" role="menu" id='termDropdown'></ul>
+			</div>
+
+			<div class="btn-group" id="department" >
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="department-btn-title">
+				Department<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu scrollable-menu" role="menu" id="departmentDropdown">
+				</ul>
+			</div>
+	    	<div id='resultarea'></div>
+	    </div>
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-lg-8">
+			<div class ="jumbotron" id='description'></div>
+		</div>
+
+		<div class="col-lg-4">
+			<div id='filters'>
+			<p>
+				<!--<label for="amount">Price range:</label>-->
+				<input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+			</p> 
+			<div id="slider-range"></div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+</body>
+</html>
