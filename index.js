@@ -57,7 +57,7 @@ function selectChampion(){
 
     var selectedChampion = possibleChamps[randNum];
     var result = "You are playing " + selectedChampion + " as a " + selectedRole + " in " + selectedLane + ".";
-    var champProBuild = "www.probuilds.net/champions/" + selectedchampion;
+    var champProBuild = "www.probuilds.net/champions/" + selectedChampion;
 
     $('#selection').html(result);
     $('#probuilds').html(champProBuild);
