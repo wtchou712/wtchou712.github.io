@@ -60,5 +60,6 @@ function selectChampion(){
     var champProBuild = "www.probuilds.net/champions/" + selectedChampion;
 
     $('#selection').html(result);
-    $('#probuilds').html(champProBuild);
+    $('#probuilds').html("Probuilds for " + selectedChampion);
+    document.getElementById("probuilds").href = champProBuild;
 }
