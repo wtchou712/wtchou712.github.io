@@ -1,79 +1,43 @@
-	<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="index.js"></script>
 <head>
-	
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
-<script src='lib/jquery.min.js'></script>
-<script src='lib/jquery-ui.custom.min.js'></script>
-
-<link href='myCalenderDivir.css' rel='stylesheet' />
-<script src='myCalenderDivir.js'></script>
-
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-slider.js"></script>
-
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
-
-<link href='fullcalendar/fullcalendar.css' rel='stylesheet' />
-<link href='fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
-<script src='fullcalendar/fullcalendar.min.js'></script>
-
-
-
+    <title>LoL Champ Selector</title>
 </head>
 <body>
-<div class="container">
+    <h1>Select your style or leave it random!</h1>
+    <div>Choose a lane
+        <select id="lane">
+            <option value="random">Random</option>
+            <option value="top">Top</option>
+            <option value="mid">Mid</option>
+            <option value="jungle">Jungle</option>
+            <option value="bot">Bot</option>
+        </select>
+    </div>
 
-	<div class="row">
+    <div>Choose a role
+        <select id="role">
+            <option value="random">Random</option>
+            <option value="assassin">Assassin</option>
+            <option value="mage">Mage</option>
+            <option value="marksman">Marksman</option>
+            <option value="tank">Tank</option>
+            <option value="fighter">Fighter</option>
+            <option value="support">Support</option>
+        </select>
+    </div>
 
-	    <div class="col-lg-8">
-	    	<div id='calendar'></div>
-	    </div>
+    <div>
+        <button id="champselect" onclick="selectChampion()">Give me a champion!</button>
+    </div>
 
-	    <div class=" panel col-lg-4">
-	    	<h1 id="title">Planning with CAESAR</h1>
+    <p id="selection"></p>
+    
+    
 
-			<div class="btn-group" id="term">
-				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="term-btn-title">
-				Term<span class="caret"></span></button>
-
-				<ul class="dropdown-menu" role="menu" id='termDropdown'></ul>
-			</div>
-
-			<div class="btn-group" id="department" >
-				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="department-btn-title">
-				Department<span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu scrollable-menu" role="menu" id="departmentDropdown">
-				</ul>
-			</div>
-	    	<div id='resultarea'></div>
-	    </div>
-
-	</div>
-
-	<div class="row">
-
-		<div class="col-lg-8">
-			<div class ="jumbotron" id='description'></div>
-		</div>
-
-		<div class="col-lg-4">
-			<div id='filters'>
-			<p>
-				<!--<label for="amount">Price range:</label>-->
-				<input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
-			</p> 
-			<div id="slider-range"></div>
-			</div>
-		</div>
-	</div>
-
-
-</div>
 
 </body>
 </html>
